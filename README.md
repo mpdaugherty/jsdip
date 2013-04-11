@@ -1,0 +1,4 @@
+jsdip
+=====
+
+Diplomacy game manager
