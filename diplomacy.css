@@ -1,3 +1,12 @@
 .long-name {
   display: none;
 }
+.highlighted {
+  fill: red;
+}
+.selected {
+  fill: blue;
+}
+.highlighted.selected {
+  fill: purple;
+}
