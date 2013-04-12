@@ -1,4 +1,5 @@
 $(function(){
+  var svgns = 'http://www.w3.org/2000/svg';
   $.get('maps/default.svg', function(data) {
     var svg = $(data).find('svg');
     svg.appendTo($('#map'));
@@ -23,8 +24,9 @@ $(function(){
           x.push(el.attr('x'));
           y.push(el.attr('y'));
         });
-        var z = $('<line x1="'+x[0]+'" y1="'+y[0]+'" x2="'+x[1]+'" y2="'+y[1]+'" stroke="green" stroke-width="2"/>');
-        z.appendTo($('#MapLayer'));
+        var line = $(document.createElementNS(svgns, 'line'));
+        line.attr({x1: x[0], y1: y[0], x2: x[1], y2: y[1], stroke: 'green', 'stroke-width': '2'});
+        line.appendTo($('#MapLayer'));
         $('.selected').each(function(i, e) {
           e.classList.remove('selected');
         });
