@@ -1,0 +1,181 @@
+{
+name: 'default',
+author: 'Hasbro',
+powers: [
+  {
+    name: 'England',
+    start: [
+      { type: 'F', province: 'edi' },
+      { type: 'F', province: 'lon' },
+      { type: 'A', province: 'lvp' }
+    ]
+  }, {
+    name: 'France',
+    start: [
+      { type: 'F', province: 'bre' },
+      { type: 'A', province: 'par' },
+      { type: 'A', province: 'mar' }
+    ]
+  }, {
+    name: 'Germany',
+    start: [
+      { type: 'F', province: 'kie' },
+      { type: 'A', province: 'mun' },
+      { type: 'A', province: 'ber' }
+    ]
+  }, {
+    name: 'Italy',
+    start: [
+      { type: 'F', province: 'nap' },
+      { type: 'A', province: 'rom' },
+      { type: 'A', province: 'ven' }
+    ]
+  }, {
+    name: 'Austria-Hungary',
+    start: [
+      { type: 'F', province: 'tri' },
+      { type: 'A', province: 'bud' },
+      { type: 'A', province: 'vie' }
+    ]
+  }, {
+    name: 'Russia',
+    start: [
+      { type: 'F', province: 'stp-sc' },
+      { type: 'F', province: 'sev' },
+      { type: 'A', province: 'war' },
+      { type: 'A', province: 'mos' }
+    ]
+  }, {
+    name: 'Turkey'
+    start: [
+      { type: 'F', province: 'ank' },
+      { type: 'A', province: 'smy' },
+      { type: 'A', province: 'con' }
+    ]
+  }
+],
+maps: [ 'default.svg' ],
+graph: {
+  adr: {
+    type: 'water',
+    neighbors: ['alb', 'apu', 'ion', 'tri', 'ven']
+  },
+  aeg: {
+    type: 'water',
+    neighbors: ['bul-sc', 'con', 'eas', 'ion', 'gre', 'smy']
+  },
+  alb: {
+    type: 'land',
+    neighbors: ['adr', 'gre', 'ion', 'ser', 'tri']
+  },
+  ank: {
+    type: 'land',
+    neighbors: ['arm', 'bla', 'con', 'smy'],
+    supplyCenter: 'Turkey'
+  },
+  apu: {
+    type: 'land',
+    neighbors: ['adr', 'ion', 'nap', 'rom', 'ven']
+  },
+  arm: {
+    type: 'land',
+    neighbors: ['ank', 'bla', 'sev', 'smy', 'syr']
+  },
+  bal: {
+    type: 'water',
+    neighbors: ['ber', 'bot', 'den', 'kie', 'lvn', 'pru', 'swe']
+  },
+  bar: {
+    type: 'water',
+    neighbors: ['nwg', 'nwy', 'stp-nc']
+  },
+  bel: {
+    type: 'land',
+    neighbors: ['bur', 'eng', 'hol', 'nth', 'pic', 'ruh'],
+    supplyCenter: 'Neutral'
+  },
+  ber: {
+    type: 'land',
+    neighbors: ['bal', 'kie', 'mun', 'pru', 'sil'],
+    supplyCenter: 'Germany'
+  },
+  bla: {
+    type: 'water',
+    neighbors: ['ank', 'arm', 'bul-ec', 'con', 'rum', 'sev']
+  },
+  boh: {
+    type: 'land',
+    neighbors: ['gal', 'mun', 'sil', 'tyr', 'vie']
+  },
+  bot: [],
+  bre: [],
+  bud: [],
+  bul: [],
+  'bul-ec': [],
+  'bul-sc': [],
+  bur: [],
+  cly: [],
+  con: [],
+  den: [],
+  eas: [],
+  edi: [],
+  eng: [],
+  fin: [],
+  gal: [],
+  gas: [],
+  gre: [],
+  hel: [],
+  hol: [],
+  ion: [],
+  iri: [],
+  kie: [],
+  lon: [],
+  lvn: [],
+  lvp: [],
+  lyo: [],
+  mao: [],
+  mar: [],
+  mos: [],
+  mun: [],
+  naf: [],
+  nao: [],
+  nap: [],
+  nth: [],
+  nwg: [],
+  nwy: [],
+  par: [],
+  pic: [],
+  pie: [],
+  por: [],
+  pru: [],
+  rom: [],
+  ruh: [],
+  rum: [],
+  ser: [],
+  sev: [],
+  sil: [],
+  ska: [],
+  smy: [],
+  spa: [],
+  'spa-nc': [],
+  'spa-sc': [],
+  stp: [],
+  'stp-nc': [],
+  'stp-sc': [],
+  swe: [],
+  swi: [],
+  syr: [],
+  tri: [],
+  tun: [],
+  tus: [],
+  tyr: [],
+  tys: [],
+  ukr: [],
+  ven: [],
+  vie: [],
+  wal: [],
+  war: [],
+  wes: [],
+  yor: []
+}
+}
