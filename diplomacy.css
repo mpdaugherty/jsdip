@@ -10,3 +10,10 @@
 .highlighted.selected {
   fill: purple;
 }
+
+svg {
+  cursor: default;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
