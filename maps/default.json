@@ -57,125 +57,280 @@ powers: [
 maps: [ 'default.svg' ],
 graph: {
   adr: {
-    type: 'water',
-    neighbors: ['alb', 'apu', 'ion', 'tri', 'ven']
+    fleet: ['alb', 'apu', 'ion', 'tri', 'ven']
   },
   aeg: {
-    type: 'water',
-    neighbors: ['bul-sc', 'con', 'eas', 'ion', 'gre', 'smy']
+    fleet: [['bul', 's'], 'con', 'eas', 'gre', 'ion', 'smy']
   },
   alb: {
-    type: 'land',
-    neighbors: ['adr', 'gre', 'ion', 'ser', 'tri']
+    army: ['gre', 'ser', 'tri'],
+    fleet: ['adr', 'gre', 'ion', 'tri']
   },
   ank: {
-    type: 'land',
-    neighbors: ['arm', 'bla', 'con', 'smy'],
-    supplyCenter: 'Turkey'
+    army: ['arm', 'con', 'smy'],
+    fleet: ['arm', 'bla', 'con']
   },
   apu: {
-    type: 'land',
-    neighbors: ['adr', 'ion', 'nap', 'rom', 'ven']
+    army: ['nap', 'rom', 'ven'],
+    fleet: ['adr', 'ion', 'nap', 'ven']
   },
   arm: {
-    type: 'land',
-    neighbors: ['ank', 'bla', 'sev', 'smy', 'syr']
+    army: ['ank', 'sev', 'smy', 'syr'],
+    fleet: ['ank', 'bla', 'sev']
   },
   bal: {
-    type: 'water',
-    neighbors: ['ber', 'bot', 'den', 'kie', 'lvn', 'pru', 'swe']
+    fleet: ['ber', 'den', 'gob', 'kie', 'lvn', 'pru', 'swe']
   },
   bar: {
-    type: 'water',
-    neighbors: ['nwg', 'nwy', 'stp-nc']
+    fleet: ['nwg', 'nwy', ['stp', 'n']]
   },
   bel: {
-    type: 'land',
-    neighbors: ['bur', 'eng', 'hol', 'nth', 'pic', 'ruh'],
-    supplyCenter: 'Neutral'
+    army: ['bur', 'hol', 'pic', 'ruh'],
+    fleet: ['eng', 'hol', 'nth', 'pic']
   },
   ber: {
-    type: 'land',
-    neighbors: ['bal', 'kie', 'mun', 'pru', 'sil'],
-    supplyCenter: 'Germany'
+    army: ['kie', 'mun', 'pru', 'sil'],
+    fleet: ['bal', 'kie', 'pru']
   },
   bla: {
-    type: 'water',
-    neighbors: ['ank', 'arm', 'bul-ec', 'con', 'rum', 'sev']
+    fleet: ['ank', 'arm', ['bul, 'e'], 'con', 'rum', 'sev']
   },
   boh: {
-    type: 'land',
-    neighbors: ['gal', 'mun', 'sil', 'tyr', 'vie']
+    army: ['gal', 'mun', 'sil', 'tyr', 'vie']
   },
-  bot: [],
-  bre: [],
-  bud: [],
-  bul: [],
-  'bul-ec': [],
-  'bul-sc': [],
-  bur: [],
-  cly: [],
-  con: [],
-  den: [],
-  eas: [],
-  edi: [],
-  eng: [],
-  fin: [],
-  gal: [],
-  gas: [],
-  gre: [],
-  hel: [],
-  hol: [],
-  ion: [],
-  iri: [],
-  kie: [],
-  lon: [],
-  lvn: [],
-  lvp: [],
-  lyo: [],
-  mao: [],
-  mar: [],
-  mos: [],
-  mun: [],
-  naf: [],
-  nao: [],
-  nap: [],
-  nth: [],
-  nwg: [],
-  nwy: [],
-  par: [],
-  pic: [],
-  pie: [],
-  por: [],
-  pru: [],
-  rom: [],
-  ruh: [],
-  rum: [],
-  ser: [],
-  sev: [],
-  sil: [],
-  ska: [],
-  smy: [],
-  spa: [],
-  'spa-nc': [],
-  'spa-sc': [],
-  stp: [],
-  'stp-nc': [],
-  'stp-sc': [],
-  swe: [],
-  swi: [],
-  syr: [],
-  tri: [],
-  tun: [],
-  tus: [],
-  tyr: [],
-  tys: [],
-  ukr: [],
-  ven: [],
-  vie: [],
-  wal: [],
-  war: [],
-  wes: [],
-  yor: []
+  bot: {
+    fleet: ['bal', 'fin', 'lvn', ['stp', 's'], 'swe']
+  },
+  bre: {
+    army: ['gas', 'par', 'pic'],
+    fleet: ['eng', 'gas', 'mao', 'pic']
+  },
+  bud: {
+    army: ['gal', 'rum', 'ser', 'tri', 'vie']
+  },
+  bul: {
+    army: ['con', 'gre', 'rum', 'ser'],
+    fleet: {
+      e: ['bla', 'con', 'rum'],
+      s: ['aeg', 'con', 'gre']
+    }
+  },
+  bur: {
+    army: ['bel', 'gas', 'mar', 'mun', 'par', 'pic']
+  },
+  cly: {
+    army: ['edi', 'lvp'],
+    fleet: ['edi', 'lvp', 'nao', 'nwg']
+  },
+  con: {
+    army: ['ank', 'bul', 'smy'],
+    fleet: ['aeg', 'ank', 'bla', ['bul', 'e'], ['bul', 's'], 'smy']
+  },
+  den: {
+    army: ['kie', 'swe'],
+    fleet: ['bal', 'hel', 'kie', 'nth', 'ska', 'swe']
+  },
+  eas: {
+    fleet: ['aeg', 'ion', 'smy', 'syr']
+  },
+  edi: {
+    army: ['cly', 'lvp', 'yor'],
+    fleet: ['cly', 'nth', 'nwg', 'yor']
+  },
+  eng: {
+    fleet: ['bel', 'bre', 'iri', 'lon', 'mao', 'nth', 'pic', 'wal']
+  },
+  fin: {
+    army: ['nwy', 'stp', 'swe'],
+    fleet: ['bot', ['stp', 's'], 'swe']
+  },
+  gal: {
+    army: ['boh', 'bud', 'rum', 'sil', 'ukr', 'vie', 'war']
+  },
+  gas: {
+    army: ['bre', 'bur', 'mar', 'par', 'spa'],
+    fleet: ['bre', 'mao', ['spa', 'n']]
+  },
+  gre: {
+    army: ['alb', 'bul', 'ser'],
+    fleet: ['aeg', 'alb', ['bul', 's'], 'ion']
+  },
+  hel: {
+    fleet: ['den', 'hol', 'nth', 'kie']
+  },
+  hol: {
+    army: ['bel', 'kie', 'ruh'],
+    fleet: ['bel', 'hel', 'kie', 'nth']
+  },
+  ion: {
+    fleet: ['adr', 'aeg', 'alb', 'apu', 'eas', 'gre', 'nap', 'tun', 'tys']
+  },
+  iri: {
+    fleet: ['eng', 'lvp', 'mao', 'nao', 'wal']
+  },
+  kie: {
+    army: ['ber', 'den', 'hol', 'mun', 'ruh'],
+    fleet: ['bal', 'ber', 'den', 'hel', 'hol']
+  },
+  lon: {
+    army: ['wal', 'yor'],
+    fleet: ['eng', 'nth', 'wal', 'yor']
+  },
+  lvn: {
+    army: ['mos', 'pru', 'stp', 'war'],
+    fleet: ['bal', 'bot', 'pru', ['stp', 's']]
+  },
+  lvp: {
+    army: ['cly', 'edi', 'wal', 'yor'],
+    fleet: ['cly', 'iri', 'nao', 'wal']
+  },
+  lyo: {
+    fleet: ['mar', 'pie', ['spa', 's'], 'tus', 'tys', 'wes']
+  },
+  mao: {
+    fleet: ['bre', 'eng', 'gas', 'iri', 'naf', 'nao', 'por', ['spa', 'n'], ['spa', 's'], 'wes']
+  },
+  mar: {
+    army: ['bur', 'gas', 'pie', 'spa'],
+    fleet: ['lyo', 'pie', ['spa', 's']]
+  },
+  mos: {
+    army: ['lvn', 'sev', 'stp', 'ukr', 'war']
+  },
+  mun: {
+    army: ['ber', 'boh', 'bur', 'kie', 'ruh', 'sil', 'tyr']
+  },
+  naf: {
+    army: ['tun'],
+    fleet: ['mao', 'tun', 'wes']
+  },
+  nao: {
+    fleet: ['cly', 'iri', 'lvp', 'mao', 'nwg']
+  },
+  nap: {
+    army: ['apu', 'rom'],
+    fleet: ['apu', 'ion', 'rom', 'tys']
+  },
+  nth: {
+    fleet: ['bel', 'den', 'edi', 'eng', 'hel', 'hol', 'lon', 'nwg', 'nwy', 'ska', 'yor']
+  },
+  nwg: {
+    fleet: ['bar', 'cly', 'edi', 'nao', 'nth', 'nwy']
+  },
+  nwy: {
+    army: ['fin', 'stp', 'swe'],
+    fleet: ['bar', 'nth', 'nwg', 'ska', ['stp', 'n'], 'swe']
+  },
+  par: {
+    army: ['bre', 'bur', 'gas', 'pic']
+  },
+  pic: {
+    army: ['bel', 'bre', 'bur', 'par'],
+    fleet: ['bel', 'bre', 'eng']
+  },
+  pie: {
+    army: ['mar', 'tus', 'tyr', 'ven'],
+    fleet: ['lyo', 'mar', 'tus']
+  },
+  por: {
+    army: ['spa'],
+    fleet: ['mao', ['spa', 'n'], ['spa', 's']]
+  },
+  pru: {
+    army: ['ber', 'lvn', 'sil', 'war'],
+    fleet: ['bal', 'ber', 'lvn']
+  },
+  rom: {
+    army: ['apu', 'nap', 'tus', 'ven'],
+    fleet: ['nap', 'tus', 'tys']
+  },
+  ruh: {
+    army: ['bel', 'bur', 'hol', 'kie', 'mun']
+  },
+  rum: {
+    army: ['bud', 'bul', 'gal', 'ser', 'sev', 'ukr'],
+    fleet: ['bla', ['bul', 'e'], 'sev']
+  },
+  ser: {
+    army: ['alb', 'bud', 'bul', 'gre', 'rum', 'tri']
+  },
+  sev: {
+    army: ['arm', 'mos', 'rum', 'ukr'],
+    fleet: ['arm', 'bla', 'rum']
+  },
+  sil: {
+    army: ['ber', 'boh', 'gal', 'mun', 'pru', 'war']
+  },
+  ska: {
+    fleet: ['den', 'nth', 'nwy', 'swe']
+  },
+  smy: {
+    army: ['ank', 'arm', 'con', 'syr'],
+    fleet: ['aeg', 'con', 'eas', 'syr']
+  },
+  spa: {
+    army: ['gas', 'mar', 'por'],
+    fleet: {
+      n: ['gas', 'mao', 'por'],
+      s: ['lyo', 'mao', 'mar', 'por', 'wes']
+    }
+  },
+  stp: {
+    army: ['fin', 'lvn', 'mos', 'nwy'],
+    fleet: {
+      n: ['bar', 'nwy'],
+      s: ['bot', 'fin', 'lvn']
+    }
+  },
+  swe: {
+    army: ['den', 'fin', 'nwy'],
+    fleet: ['bal', 'bot', 'den', 'fin', 'nwy', 'ska']
+  },
+  syr: {
+    army: ['arm', 'smy'],
+    fleet: ['eas', 'smy']
+  },
+  tri: {
+    army: ['alb', 'bud', 'ser', 'tyr', 'ven', 'vie'],
+    fleet: ['adr', 'alb', 'ven']
+  },
+  tun: {
+    army: ['naf'],
+    fleet: ['ion', 'naf', 'tys', 'wes']
+  },
+  tus: {
+    army: ['rom', 'pie', 'ven'],
+    fleet: ['lyo', 'pie', 'rom', 'tys']
+  },
+  tyr: {
+    army: ['boh', 'mun', 'pie', 'tri', 'ven', 'vie']
+  },
+  tys: {
+    fleet: ['ion', 'lyo', 'nap', 'rom', 'tun', 'tus', 'wes']
+  },
+  ukr: {
+    army: ['gal', 'mos', 'rum', 'sev', 'war']
+  },
+  ven: {
+    army: ['apu', 'pie', 'rom', 'tri', 'tus', 'tyr'],
+    fleet: ['adr', 'apu', 'tri']
+  },
+  vie: {
+    army: ['boh', 'bud', 'gal', 'tri', 'tyr']
+  },
+  wal: {
+    army: ['lon', 'lvp', 'yor'],
+    fleet: ['eng', 'iri', 'lon', 'lvp']
+  },
+  war: {
+    army: ['gal', 'lvn', 'mos', 'pru', 'sil', 'ukr']
+  },
+  wes: {
+    fleet: ['lyo', 'mao', 'naf', ['spa', 's'], 'tun', 'tys']
+  },
+  yor: {
+    army: ['edi', 'lon', 'lvp', 'wal'],
+    fleet: ['edi', 'lon', 'nth']
+  }
 }
 }
