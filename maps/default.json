@@ -40,7 +40,7 @@ powers: [
   }, {
     name: 'Russia',
     start: [
-      { type: 'F', province: 'stp-sc' },
+      { type: 'F', province: ['stp', 's'] },
       { type: 'F', province: 'sev' },
       { type: 'A', province: 'war' },
       { type: 'A', province: 'mos' }
@@ -54,6 +54,84 @@ powers: [
     ]
   }
 ],
+provinces: [
+  { name: 'adr', aliases: ['Adriatic Sea', 'ads'] },
+  { name: 'aeg', aliases: ['Aegean Sea'] },
+  { name: 'alb', aliases: ['Albania'] },
+  { name: 'ank', aliases: ['Ankara'] },
+  { name: 'apu', aliases: ['Apulia'] },
+  { name: 'arm', aliases: ['Armenia'] },
+  { name: 'bal', aliases: ['Baltic Sea'] },
+  { name: 'bar', aliases: ['Barents Sea'] },
+  { name: 'bel', aliases: ['Belgium'] },
+  { name: 'ber', aliases: ['Berlin'] },
+  { name: 'bla', aliases: ['Black Sea'] },
+  { name: 'boh', aliases: ['Bohemia'] },
+  { name: 'bre', aliases: ['Brest'] },
+  { name: 'bud', aliases: ['Budapest'] },
+  { name: 'bul', aliases: ['Bulgaria'] },
+  { name: 'bur', aliases: ['Burgundy'] },
+  { name: 'cly', aliases: ['Clyde'] },
+  { name: 'con', aliases: ['Constantinople', 'Istanbul'] },
+  { name: 'den', aliases: ['Denmark'] },
+  { name: 'eas', aliases: ['Eastern Mediterranean', 'ems'] },
+  { name: 'ech', aliases: ['English Channel', 'eng', 'enc'] },
+  { name: 'edi', aliases: ['Edinburgh'] },
+  { name: 'fin', aliases: ['Finland'] },
+  { name: 'gal', aliases: ['Galicia'] },
+  { name: 'gas', aliases: ['Gascony'] },
+  { name: 'gob', aliases: ['Gulf of Bothnia', 'bot'] },
+  { name: 'gol', aliases: ['Gulf of Lyon', 'lyo'] },
+  { name: 'gre', aliases: ['Greece'] },
+  { name: 'hel', aliases: ['Helgoland Bight', 'hgb'] },
+  { name: 'hol', aliases: ['Holland'] },
+  { name: 'ion', aliases: ['Ionian Sea', 'ios', 'ins'] },
+  { name: 'iri', aliases: ['Irish Sea', 'irs'] },
+  { name: 'kie', aliases: ['Kiel'] },
+  { name: 'lon', aliases: ['London'] },
+  { name: 'lvn', aliases: ['Livonia', 'lva'] },
+  { name: 'lvp', aliases: ['Liverpool', 'lpl'] },
+  { name: 'mao', aliases: ['Mid-Atlantic Ocean', 'mid'] },
+  { name: 'mar', aliases: ['Marseilles'] },
+  { name: 'mos', aliases: ['Moscow'] },
+  { name: 'mun', aliases: ['Munich'] },
+  { name: 'naf', aliases: ['North Africa'] },
+  { name: 'nao', aliases: ['North Atlantic Ocean', 'nat'] },
+  { name: 'nap', aliases: ['Naples'] },
+  { name: 'nth', aliases: ['North Sea'] },
+  { name: 'nwg', aliases: ['Norwegian Sea', 'nrg', 'nws'] },
+  { name: 'nwy', aliases: ['Norway', 'nor'] },
+  { name: 'par', aliases: ['Paris'] },
+  { name: 'pic', aliases: ['Picardy'] },
+  { name: 'pie', aliases: ['Piedmont'] },
+  { name: 'por', aliases: ['Portugal'] },
+  { name: 'pru', aliases: ['Prussia'] },
+  { name: 'rom', aliases: ['Rome', 'rme'] },
+  { name: 'ruh', aliases: ['Ruhr', 'rhr'] },
+  { name: 'rum', aliases: ['Rumania', 'rma'] },
+  { name: 'ser', aliases: ['Serbia'] },
+  { name: 'sev', aliases: ['Sevastopol'] },
+  { name: 'sil', aliases: ['Silesia'] },
+  { name: 'ska', aliases: ['Skagerrak', 'skg'] },
+  { name: 'smy', aliases: ['Smyrna'] },
+  { name: 'spa', aliases: ['Spain'] },
+  { name: 'stp', aliases: ['St. Petersburg', 'Saint Petersburg'] },
+  { name: 'swe', aliases: ['Sweden'] },
+  { name: 'syr', aliases: ['Syria'] },
+  { name: 'tri', aliases: ['Trieste'] },
+  { name: 'tun', aliases: ['Tunis'] },
+  { name: 'tus', aliases: ['Tuscany'] },
+  { name: 'tyr', aliases: ['Tyrolia'] },
+  { name: 'tys', aliases: ['Tyrrhenian Sea', 'tyn'] },
+  { name: 'ukr', aliases: ['Ukraine'] },
+  { name: 'ven', aliases: ['Venice'] },
+  { name: 'vie', aliases: ['Vienna'] },
+  { name: 'wal', aliases: ['Wales'] },
+  { name: 'war', aliases: ['Warsaw'] },
+  { name: 'wes', aliases: ['Western Mediterranean', 'wms'] },
+  { name: 'yor', aliases: ['Yorkshire'] }
+],
+centers: ['ank', 'bel', 'ber', 'bre', 'bud', 'bul', 'con', 'den', 'edi', 'gre', 'hol', 'kie', 'lon', 'lvp', 'mar', 'mos', 'mun', 'nap', 'nwy', 'par', 'por', 'rom', 'rum', 'ser', 'sev', 'smy', 'spa', 'stp', 'swe', 'tri', 'tun', 'ven', 'vie', 'war'],
 maps: [ 'default.svg' ],
 graph: {
   adr: {
@@ -86,7 +164,7 @@ graph: {
   },
   bel: {
     army: ['bur', 'hol', 'pic', 'ruh'],
-    fleet: ['eng', 'hol', 'nth', 'pic']
+    fleet: ['ech', 'hol', 'nth', 'pic']
   },
   ber: {
     army: ['kie', 'mun', 'pru', 'sil'],
@@ -98,12 +176,9 @@ graph: {
   boh: {
     army: ['gal', 'mun', 'sil', 'tyr', 'vie']
   },
-  bot: {
-    fleet: ['bal', 'fin', 'lvn', ['stp', 's'], 'swe']
-  },
   bre: {
     army: ['gas', 'par', 'pic'],
-    fleet: ['eng', 'gas', 'mao', 'pic']
+    fleet: ['ech', 'gas', 'mao', 'pic']
   },
   bud: {
     army: ['gal', 'rum', 'ser', 'tri', 'vie']
@@ -133,16 +208,16 @@ graph: {
   eas: {
     fleet: ['aeg', 'ion', 'smy', 'syr']
   },
+  ech: {
+    fleet: ['bel', 'bre', 'iri', 'lon', 'mao', 'nth', 'pic', 'wal']
+  },
   edi: {
     army: ['cly', 'lvp', 'yor'],
     fleet: ['cly', 'nth', 'nwg', 'yor']
   },
-  eng: {
-    fleet: ['bel', 'bre', 'iri', 'lon', 'mao', 'nth', 'pic', 'wal']
-  },
   fin: {
     army: ['nwy', 'stp', 'swe'],
-    fleet: ['bot', ['stp', 's'], 'swe']
+    fleet: ['gob', ['stp', 's'], 'swe']
   },
   gal: {
     army: ['boh', 'bud', 'rum', 'sil', 'ukr', 'vie', 'war']
@@ -150,6 +225,12 @@ graph: {
   gas: {
     army: ['bre', 'bur', 'mar', 'par', 'spa'],
     fleet: ['bre', 'mao', ['spa', 'n']]
+  },
+  gob: {
+    fleet: ['bal', 'fin', 'lvn', ['stp', 's'], 'swe']
+  },
+  gol: {
+    fleet: ['mar', 'pie', ['spa', 's'], 'tus', 'tys', 'wes']
   },
   gre: {
     army: ['alb', 'bul', 'ser'],
@@ -166,7 +247,7 @@ graph: {
     fleet: ['adr', 'aeg', 'alb', 'apu', 'eas', 'gre', 'nap', 'tun', 'tys']
   },
   iri: {
-    fleet: ['eng', 'lvp', 'mao', 'nao', 'wal']
+    fleet: ['ech', 'lvp', 'mao', 'nao', 'wal']
   },
   kie: {
     army: ['ber', 'den', 'hol', 'mun', 'ruh'],
@@ -174,25 +255,22 @@ graph: {
   },
   lon: {
     army: ['wal', 'yor'],
-    fleet: ['eng', 'nth', 'wal', 'yor']
+    fleet: ['ech', 'nth', 'wal', 'yor']
   },
   lvn: {
     army: ['mos', 'pru', 'stp', 'war'],
-    fleet: ['bal', 'bot', 'pru', ['stp', 's']]
+    fleet: ['bal', 'gob', 'pru', ['stp', 's']]
   },
   lvp: {
     army: ['cly', 'edi', 'wal', 'yor'],
     fleet: ['cly', 'iri', 'nao', 'wal']
   },
-  lyo: {
-    fleet: ['mar', 'pie', ['spa', 's'], 'tus', 'tys', 'wes']
-  },
   mao: {
-    fleet: ['bre', 'eng', 'gas', 'iri', 'naf', 'nao', 'por', ['spa', 'n'], ['spa', 's'], 'wes']
+    fleet: ['bre', 'ech', 'gas', 'iri', 'naf', 'nao', 'por', ['spa', 'n'], ['spa', 's'], 'wes']
   },
   mar: {
     army: ['bur', 'gas', 'pie', 'spa'],
-    fleet: ['lyo', 'pie', ['spa', 's']]
+    fleet: ['gol', 'pie', ['spa', 's']]
   },
   mos: {
     army: ['lvn', 'sev', 'stp', 'ukr', 'war']
@@ -212,7 +290,7 @@ graph: {
     fleet: ['apu', 'ion', 'rom', 'tys']
   },
   nth: {
-    fleet: ['bel', 'den', 'edi', 'eng', 'hel', 'hol', 'lon', 'nwg', 'nwy', 'ska', 'yor']
+    fleet: ['bel', 'den', 'ech', 'edi', 'hel', 'hol', 'lon', 'nwg', 'nwy', 'ska', 'yor']
   },
   nwg: {
     fleet: ['bar', 'cly', 'edi', 'nao', 'nth', 'nwy']
@@ -226,11 +304,11 @@ graph: {
   },
   pic: {
     army: ['bel', 'bre', 'bur', 'par'],
-    fleet: ['bel', 'bre', 'eng']
+    fleet: ['bel', 'bre', 'ech']
   },
   pie: {
     army: ['mar', 'tus', 'tyr', 'ven'],
-    fleet: ['lyo', 'mar', 'tus']
+    fleet: ['gol', 'mar', 'tus']
   },
   por: {
     army: ['spa'],
@@ -272,19 +350,19 @@ graph: {
     army: ['gas', 'mar', 'por'],
     fleet: {
       n: ['gas', 'mao', 'por'],
-      s: ['lyo', 'mao', 'mar', 'por', 'wes']
+      s: ['gol', 'mao', 'mar', 'por', 'wes']
     }
   },
   stp: {
     army: ['fin', 'lvn', 'mos', 'nwy'],
     fleet: {
       n: ['bar', 'nwy'],
-      s: ['bot', 'fin', 'lvn']
+      s: ['fin', 'gob', 'lvn']
     }
   },
   swe: {
     army: ['den', 'fin', 'nwy'],
-    fleet: ['bal', 'bot', 'den', 'fin', 'nwy', 'ska']
+    fleet: ['bal', 'den', 'fin', 'gob', 'nwy', 'ska']
   },
   syr: {
     army: ['arm', 'smy'],
@@ -300,13 +378,13 @@ graph: {
   },
   tus: {
     army: ['rom', 'pie', 'ven'],
-    fleet: ['lyo', 'pie', 'rom', 'tys']
+    fleet: ['gol', 'pie', 'rom', 'tys']
   },
   tyr: {
     army: ['boh', 'mun', 'pie', 'tri', 'ven', 'vie']
   },
   tys: {
-    fleet: ['ion', 'lyo', 'nap', 'rom', 'tun', 'tus', 'wes']
+    fleet: ['gol', 'ion', 'nap', 'rom', 'tun', 'tus', 'wes']
   },
   ukr: {
     army: ['gal', 'mos', 'rum', 'sev', 'war']
@@ -320,13 +398,13 @@ graph: {
   },
   wal: {
     army: ['lon', 'lvp', 'yor'],
-    fleet: ['eng', 'iri', 'lon', 'lvp']
+    fleet: ['ech', 'iri', 'lon', 'lvp']
   },
   war: {
     army: ['gal', 'lvn', 'mos', 'pru', 'sil', 'ukr']
   },
   wes: {
-    fleet: ['lyo', 'mao', 'naf', ['spa', 's'], 'tun', 'tys']
+    fleet: ['gol', 'mao', 'naf', ['spa', 's'], 'tun', 'tys']
   },
   yor: {
     army: ['edi', 'lon', 'lvp', 'wal'],
