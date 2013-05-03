@@ -1,414 +1,414 @@
 {
-name: 'default',
-author: 'Hasbro',
-powers: [
+"name": "default",
+"author": "Hasbro",
+"powers": [
   {
-    name: 'England',
-    start: [
-      { type: 'F', province: 'edi' },
-      { type: 'F', province: 'lon' },
-      { type: 'A', province: 'lvp' }
+    "name": "England",
+    "start": [
+      { "type": "F", "province": "edi" },
+      { "type": "F", "province": "lon" },
+      { "type": "A", "province": "lvp" }
     ]
   }, {
-    name: 'France',
-    start: [
-      { type: 'F', province: 'bre' },
-      { type: 'A', province: 'par' },
-      { type: 'A', province: 'mar' }
+    "name": "France",
+    "start": [
+      { "type": "F", "province": "bre" },
+      { "type": "A", "province": "par" },
+      { "type": "A", "province": "mar" }
     ]
   }, {
-    name: 'Germany',
-    start: [
-      { type: 'F', province: 'kie' },
-      { type: 'A', province: 'mun' },
-      { type: 'A', province: 'ber' }
+    "name": "Germany",
+    "start": [
+      { "type": "F", "province": "kie" },
+      { "type": "A", "province": "mun" },
+      { "type": "A", "province": "ber" }
     ]
   }, {
-    name: 'Italy',
-    start: [
-      { type: 'F', province: 'nap' },
-      { type: 'A', province: 'rom' },
-      { type: 'A', province: 'ven' }
+    "name": "Italy",
+    "start": [
+      { "type": "F", "province": "nap" },
+      { "type": "A", "province": "rom" },
+      { "type": "A", "province": "ven" }
     ]
   }, {
-    name: 'Austria-Hungary',
-    start: [
-      { type: 'F', province: 'tri' },
-      { type: 'A', province: 'bud' },
-      { type: 'A', province: 'vie' }
+    "name": "Austria-Hungary",
+    "start": [
+      { "type": "F", "province": "tri" },
+      { "type": "A", "province": "bud" },
+      { "type": "A", "province": "vie" }
     ]
   }, {
-    name: 'Russia',
-    start: [
-      { type: 'F', province: ['stp', 's'] },
-      { type: 'F', province: 'sev' },
-      { type: 'A', province: 'war' },
-      { type: 'A', province: 'mos' }
+    "name": "Russia",
+    "start": [
+      { "type": "F", "province": ["stp", "s"] },
+      { "type": "F", "province": "sev" },
+      { "type": "A", "province": "war" },
+      { "type": "A", "province": "mos" }
     ]
   }, {
-    name: 'Turkey'
-    start: [
-      { type: 'F', province: 'ank' },
-      { type: 'A', province: 'smy' },
-      { type: 'A', province: 'con' }
+    "name": "Turkey",
+    "start": [
+      { "type": "F", "province": "ank" },
+      { "type": "A", "province": "smy" },
+      { "type": "A", "province": "con" }
     ]
   }
 ],
-provinces: [
-  { name: 'adr', aliases: ['Adriatic Sea', 'ads'] },
-  { name: 'aeg', aliases: ['Aegean Sea'] },
-  { name: 'alb', aliases: ['Albania'] },
-  { name: 'ank', aliases: ['Ankara'] },
-  { name: 'apu', aliases: ['Apulia'] },
-  { name: 'arm', aliases: ['Armenia'] },
-  { name: 'bal', aliases: ['Baltic Sea'] },
-  { name: 'bar', aliases: ['Barents Sea'] },
-  { name: 'bel', aliases: ['Belgium'] },
-  { name: 'ber', aliases: ['Berlin'] },
-  { name: 'bla', aliases: ['Black Sea'] },
-  { name: 'boh', aliases: ['Bohemia'] },
-  { name: 'bre', aliases: ['Brest'] },
-  { name: 'bud', aliases: ['Budapest'] },
-  { name: 'bul', aliases: ['Bulgaria'] },
-  { name: 'bur', aliases: ['Burgundy'] },
-  { name: 'cly', aliases: ['Clyde'] },
-  { name: 'con', aliases: ['Constantinople', 'Istanbul'] },
-  { name: 'den', aliases: ['Denmark'] },
-  { name: 'eas', aliases: ['Eastern Mediterranean', 'ems'] },
-  { name: 'ech', aliases: ['English Channel', 'eng', 'enc'] },
-  { name: 'edi', aliases: ['Edinburgh'] },
-  { name: 'fin', aliases: ['Finland'] },
-  { name: 'gal', aliases: ['Galicia'] },
-  { name: 'gas', aliases: ['Gascony'] },
-  { name: 'gob', aliases: ['Gulf of Bothnia', 'bot'] },
-  { name: 'gol', aliases: ['Gulf of Lyon', 'lyo'] },
-  { name: 'gre', aliases: ['Greece'] },
-  { name: 'hel', aliases: ['Helgoland Bight', 'hgb'] },
-  { name: 'hol', aliases: ['Holland'] },
-  { name: 'ion', aliases: ['Ionian Sea', 'ios', 'ins'] },
-  { name: 'iri', aliases: ['Irish Sea', 'irs'] },
-  { name: 'kie', aliases: ['Kiel'] },
-  { name: 'lon', aliases: ['London'] },
-  { name: 'lvn', aliases: ['Livonia', 'lva'] },
-  { name: 'lvp', aliases: ['Liverpool', 'lpl'] },
-  { name: 'mao', aliases: ['Mid-Atlantic Ocean', 'mid'] },
-  { name: 'mar', aliases: ['Marseilles'] },
-  { name: 'mos', aliases: ['Moscow'] },
-  { name: 'mun', aliases: ['Munich'] },
-  { name: 'naf', aliases: ['North Africa'] },
-  { name: 'nao', aliases: ['North Atlantic Ocean', 'nat'] },
-  { name: 'nap', aliases: ['Naples'] },
-  { name: 'nth', aliases: ['North Sea'] },
-  { name: 'nwg', aliases: ['Norwegian Sea', 'nrg', 'nws'] },
-  { name: 'nwy', aliases: ['Norway', 'nor'] },
-  { name: 'par', aliases: ['Paris'] },
-  { name: 'pic', aliases: ['Picardy'] },
-  { name: 'pie', aliases: ['Piedmont'] },
-  { name: 'por', aliases: ['Portugal'] },
-  { name: 'pru', aliases: ['Prussia'] },
-  { name: 'rom', aliases: ['Rome', 'rme'] },
-  { name: 'ruh', aliases: ['Ruhr', 'rhr'] },
-  { name: 'rum', aliases: ['Rumania', 'rma'] },
-  { name: 'ser', aliases: ['Serbia'] },
-  { name: 'sev', aliases: ['Sevastopol'] },
-  { name: 'sil', aliases: ['Silesia'] },
-  { name: 'ska', aliases: ['Skagerrak', 'skg'] },
-  { name: 'smy', aliases: ['Smyrna'] },
-  { name: 'spa', aliases: ['Spain'] },
-  { name: 'stp', aliases: ['St. Petersburg', 'Saint Petersburg'] },
-  { name: 'swe', aliases: ['Sweden'] },
-  { name: 'syr', aliases: ['Syria'] },
-  { name: 'tri', aliases: ['Trieste'] },
-  { name: 'tun', aliases: ['Tunis'] },
-  { name: 'tus', aliases: ['Tuscany'] },
-  { name: 'tyr', aliases: ['Tyrolia'] },
-  { name: 'tys', aliases: ['Tyrrhenian Sea', 'tyn'] },
-  { name: 'ukr', aliases: ['Ukraine'] },
-  { name: 'ven', aliases: ['Venice'] },
-  { name: 'vie', aliases: ['Vienna'] },
-  { name: 'wal', aliases: ['Wales'] },
-  { name: 'war', aliases: ['Warsaw'] },
-  { name: 'wes', aliases: ['Western Mediterranean', 'wms'] },
-  { name: 'yor', aliases: ['Yorkshire'] }
-],
-centers: ['ank', 'bel', 'ber', 'bre', 'bud', 'bul', 'con', 'den', 'edi', 'gre', 'hol', 'kie', 'lon', 'lvp', 'mar', 'mos', 'mun', 'nap', 'nwy', 'par', 'por', 'rom', 'rum', 'ser', 'sev', 'smy', 'spa', 'stp', 'swe', 'tri', 'tun', 'ven', 'vie', 'war'],
-maps: [ 'default.svg' ],
-graph: {
-  adr: {
-    fleet: ['alb', 'apu', 'ion', 'tri', 'ven']
+"aliases": {
+  "Adriatic Sea": "adr", "ads": "adr",
+  "Aegean Sea": "aeg",
+  "Albania": "alb",
+  "Ankara": "ank",
+  "Apulia": "apu",
+  "Armenia": "arm",
+  "Baltic Sea": "bal",
+  "Barents Sea": "bar",
+  "Belgium": "bel",
+  "Berlin": "ber",
+  "Black Sea": "bla",
+  "Bohemia": "boh",
+  "Brest": "bre",
+  "Budapest": "bud",
+  "Bulgaria": "bul",
+  "Burgundy": "bur",
+  "Clyde": "cly",
+  "Constantinople": "con", "Istanbul": "con",
+  "Denmark": "den",
+  "Eastern Mediterranean": "eas", "ems": "eas",
+  "English Channel": "ech", "eng": "ech", "enc": "ech",
+  "Edinburgh": "edi",
+  "Finland": "fin",
+  "Galicia": "gal",
+  "Gascony": "gas",
+  "Gulf of Bothnia": "gob", "bot": "gob",
+  "Gulf of Lyon": "gol", "lyo": "gol",
+  "Greece": "gre",
+  "Helgoland Bight": "hel", "hgb": "hel",
+  "Holland": "hol",
+  "Ionian Sea": "ion", "ios": "ion", "ins": "ion",
+  "Irish Sea": "iri", "irs": "iri",
+  "Kiel": "kie",
+  "London": "lon",
+  "Livonia": "lvn", "lva": "lvn",
+  "Liverpool": "lvp", "lpl": "lvp",
+  "Mid-Atlantic Ocean": "mao", "mid": "mao",
+  "Marseilles": "mar",
+  "Moscow": "mos",
+  "Munich": "mun",
+  "North Africa": "naf",
+  "North Atlantic Ocean": "nao", "nat": "nao",
+  "Naples": "nap",
+  "North Sea": "nth",
+  "Norwegian Sea": "nwg", "nrg": "nwg", "nws": "nwg",
+  "Norway": "nwy", "nor": "nwy",
+  "Paris": "par",
+  "Picardy": "pic",
+  "Piedmont": "pie",
+  "Portugal": "por",
+  "Prussia": "pru",
+  "Rome": "rom", "rme": "rom",
+  "Ruhr": "ruh", "rhr": "ruh",
+  "Rumania": "rum", "rma": "rum",
+  "Serbia": "ser",
+  "Sevastopol": "sev",
+  "Silesia": "sil",
+  "Skagerrak": "ska", "skg": "ska",
+  "Smyrna": "smy",
+  "Spain": "spa",
+  "St. Petersburg": "stp", "Saint Petersburg": "stp",
+  "Sweden": "swe",
+  "Syria": "syr",
+  "Trieste": "tri",
+  "Tunis": "tun",
+  "Tuscany": "tus",
+  "Tyrolia": "tyr",
+  "Tyrrhenian Sea": "tys", "tyn": "tys",
+  "Ukraine": "ukr",
+  "Venice": "ven",
+  "Vienna": "vie",
+  "Wales": "wal",
+  "Warsaw": "war",
+  "Western Mediterranean": "wes", "wms": "wes",
+  "Yorkshire": "yor"
+},
+"centers": ["ank", "bel", "ber", "bre", "bud", "bul", "con", "den", "edi", "gre", "hol", "kie", "lon", "lvp", "mar", "mos", "mun", "nap", "nwy", "par", "por", "rom", "rum", "ser", "sev", "smy", "spa", "stp", "swe", "tri", "tun", "ven", "vie", "war"],
+"maps": [ "default.svg" ],
+"graph": {
+  "adr": {
+    "fleet": ["alb", "apu", "ion", "tri", "ven"]
   },
-  aeg: {
-    fleet: [['bul', 's'], 'con', 'eas', 'gre', 'ion', 'smy']
+  "aeg": {
+    "fleet": [["bul", "s"], "con", "eas", "gre", "ion", "smy"]
   },
-  alb: {
-    army: ['gre', 'ser', 'tri'],
-    fleet: ['adr', 'gre', 'ion', 'tri']
+  "alb": {
+    "army": ["gre", "ser", "tri"],
+    "fleet": ["adr", "gre", "ion", "tri"]
   },
-  ank: {
-    army: ['arm', 'con', 'smy'],
-    fleet: ['arm', 'bla', 'con']
+  "ank": {
+    "army": ["arm", "con", "smy"],
+    "fleet": ["arm", "bla", "con"]
   },
-  apu: {
-    army: ['nap', 'rom', 'ven'],
-    fleet: ['adr', 'ion', 'nap', 'ven']
+  "apu": {
+    "army": ["nap", "rom", "ven"],
+    "fleet": ["adr", "ion", "nap", "ven"]
   },
-  arm: {
-    army: ['ank', 'sev', 'smy', 'syr'],
-    fleet: ['ank', 'bla', 'sev']
+  "arm": {
+    "army": ["ank", "sev", "smy", "syr"],
+    "fleet": ["ank", "bla", "sev"]
   },
-  bal: {
-    fleet: ['ber', 'den', 'gob', 'kie', 'lvn', 'pru', 'swe']
+  "bal": {
+    "fleet": ["ber", "den", "gob", "kie", "lvn", "pru", "swe"]
   },
-  bar: {
-    fleet: ['nwg', 'nwy', ['stp', 'n']]
+  "bar": {
+    "fleet": ["nwg", "nwy", ["stp", "n"]]
   },
-  bel: {
-    army: ['bur', 'hol', 'pic', 'ruh'],
-    fleet: ['ech', 'hol', 'nth', 'pic']
+  "bel": {
+    "army": ["bur", "hol", "pic", "ruh"],
+    "fleet": ["ech", "hol", "nth", "pic"]
   },
-  ber: {
-    army: ['kie', 'mun', 'pru', 'sil'],
-    fleet: ['bal', 'kie', 'pru']
+  "ber": {
+    "army": ["kie", "mun", "pru", "sil"],
+    "fleet": ["bal", "kie", "pru"]
   },
-  bla: {
-    fleet: ['ank', 'arm', ['bul, 'e'], 'con', 'rum', 'sev']
+  "bla": {
+    "fleet": ["ank", "arm", ["bul", "e"], "con", "rum", "sev"]
   },
-  boh: {
-    army: ['gal', 'mun', 'sil', 'tyr', 'vie']
+  "boh": {
+    "army": ["gal", "mun", "sil", "tyr", "vie"]
   },
-  bre: {
-    army: ['gas', 'par', 'pic'],
-    fleet: ['ech', 'gas', 'mao', 'pic']
+  "bre": {
+    "army": ["gas", "par", "pic"],
+    "fleet": ["ech", "gas", "mao", "pic"]
   },
-  bud: {
-    army: ['gal', 'rum', 'ser', 'tri', 'vie']
+  "bud": {
+    "army": ["gal", "rum", "ser", "tri", "vie"]
   },
-  bul: {
-    army: ['con', 'gre', 'rum', 'ser'],
-    fleet: {
-      e: ['bla', 'con', 'rum'],
-      s: ['aeg', 'con', 'gre']
+  "bul": {
+    "army": ["con", "gre", "rum", "ser"],
+    "fleet": {
+      "e": ["bla", "con", "rum"],
+      "s": ["aeg", "con", "gre"]
     }
   },
-  bur: {
-    army: ['bel', 'gas', 'mar', 'mun', 'par', 'pic']
+  "bur": {
+    "army": ["bel", "gas", "mar", "mun", "par", "pic", "ruh"]
   },
-  cly: {
-    army: ['edi', 'lvp'],
-    fleet: ['edi', 'lvp', 'nao', 'nwg']
+  "cly": {
+    "army": ["edi", "lvp"],
+    "fleet": ["edi", "lvp", "nao", "nwg"]
   },
-  con: {
-    army: ['ank', 'bul', 'smy'],
-    fleet: ['aeg', 'ank', 'bla', ['bul', 'e'], ['bul', 's'], 'smy']
+  "con": {
+    "army": ["ank", "bul", "smy"],
+    "fleet": ["aeg", "ank", "bla", ["bul", "e"], ["bul", "s"], "smy"]
   },
-  den: {
-    army: ['kie', 'swe'],
-    fleet: ['bal', 'hel', 'kie', 'nth', 'ska', 'swe']
+  "den": {
+    "army": ["kie", "swe"],
+    "fleet": ["bal", "hel", "kie", "nth", "ska", "swe"]
   },
-  eas: {
-    fleet: ['aeg', 'ion', 'smy', 'syr']
+  "eas": {
+    "fleet": ["aeg", "ion", "smy", "syr"]
   },
-  ech: {
-    fleet: ['bel', 'bre', 'iri', 'lon', 'mao', 'nth', 'pic', 'wal']
+  "ech": {
+    "fleet": ["bel", "bre", "iri", "lon", "mao", "nth", "pic", "wal"]
   },
-  edi: {
-    army: ['cly', 'lvp', 'yor'],
-    fleet: ['cly', 'nth', 'nwg', 'yor']
+  "edi": {
+    "army": ["cly", "lvp", "yor"],
+    "fleet": ["cly", "nth", "nwg", "yor"]
   },
-  fin: {
-    army: ['nwy', 'stp', 'swe'],
-    fleet: ['gob', ['stp', 's'], 'swe']
+  "fin": {
+    "army": ["nwy", "stp", "swe"],
+    "fleet": ["gob", ["stp", "s"], "swe"]
   },
-  gal: {
-    army: ['boh', 'bud', 'rum', 'sil', 'ukr', 'vie', 'war']
+  "gal": {
+    "army": ["boh", "bud", "rum", "sil", "ukr", "vie", "war"]
   },
-  gas: {
-    army: ['bre', 'bur', 'mar', 'par', 'spa'],
-    fleet: ['bre', 'mao', ['spa', 'n']]
+  "gas": {
+    "army": ["bre", "bur", "mar", "par", "spa"],
+    "fleet": ["bre", "mao", ["spa", "n"]]
   },
-  gob: {
-    fleet: ['bal', 'fin', 'lvn', ['stp', 's'], 'swe']
+  "gob": {
+    "fleet": ["bal", "fin", "lvn", ["stp", "s"], "swe"]
   },
-  gol: {
-    fleet: ['mar', 'pie', ['spa', 's'], 'tus', 'tys', 'wes']
+  "gol": {
+    "fleet": ["mar", "pie", ["spa", "s"], "tus", "tys", "wes"]
   },
-  gre: {
-    army: ['alb', 'bul', 'ser'],
-    fleet: ['aeg', 'alb', ['bul', 's'], 'ion']
+  "gre": {
+    "army": ["alb", "bul", "ser"],
+    "fleet": ["aeg", "alb", ["bul", "s"], "ion"]
   },
-  hel: {
-    fleet: ['den', 'hol', 'nth', 'kie']
+  "hel": {
+    "fleet": ["den", "hol", "nth", "kie"]
   },
-  hol: {
-    army: ['bel', 'kie', 'ruh'],
-    fleet: ['bel', 'hel', 'kie', 'nth']
+  "hol": {
+    "army": ["bel", "kie", "ruh"],
+    "fleet": ["bel", "hel", "kie", "nth"]
   },
-  ion: {
-    fleet: ['adr', 'aeg', 'alb', 'apu', 'eas', 'gre', 'nap', 'tun', 'tys']
+  "ion": {
+    "fleet": ["adr", "aeg", "alb", "apu", "eas", "gre", "nap", "tun", "tys"]
   },
-  iri: {
-    fleet: ['ech', 'lvp', 'mao', 'nao', 'wal']
+  "iri": {
+    "fleet": ["ech", "lvp", "mao", "nao", "wal"]
   },
-  kie: {
-    army: ['ber', 'den', 'hol', 'mun', 'ruh'],
-    fleet: ['bal', 'ber', 'den', 'hel', 'hol']
+  "kie": {
+    "army": ["ber", "den", "hol", "mun", "ruh"],
+    "fleet": ["bal", "ber", "den", "hel", "hol"]
   },
-  lon: {
-    army: ['wal', 'yor'],
-    fleet: ['ech', 'nth', 'wal', 'yor']
+  "lon": {
+    "army": ["wal", "yor"],
+    "fleet": ["ech", "nth", "wal", "yor"]
   },
-  lvn: {
-    army: ['mos', 'pru', 'stp', 'war'],
-    fleet: ['bal', 'gob', 'pru', ['stp', 's']]
+  "lvn": {
+    "army": ["mos", "pru", "stp", "war"],
+    "fleet": ["bal", "gob", "pru", ["stp", "s"]]
   },
-  lvp: {
-    army: ['cly', 'edi', 'wal', 'yor'],
-    fleet: ['cly', 'iri', 'nao', 'wal']
+  "lvp": {
+    "army": ["cly", "edi", "wal", "yor"],
+    "fleet": ["cly", "iri", "nao", "wal"]
   },
-  mao: {
-    fleet: ['bre', 'ech', 'gas', 'iri', 'naf', 'nao', 'por', ['spa', 'n'], ['spa', 's'], 'wes']
+  "mao": {
+    "fleet": ["bre", "ech", "gas", "iri", "naf", "nao", "por", ["spa", "n"], ["spa", "s"], "wes"]
   },
-  mar: {
-    army: ['bur', 'gas', 'pie', 'spa'],
-    fleet: ['gol', 'pie', ['spa', 's']]
+  "mar": {
+    "army": ["bur", "gas", "pie", "spa"],
+    "fleet": ["gol", "pie", ["spa", "s"]]
   },
-  mos: {
-    army: ['lvn', 'sev', 'stp', 'ukr', 'war']
+  "mos": {
+    "army": ["lvn", "sev", "stp", "ukr", "war"]
   },
-  mun: {
-    army: ['ber', 'boh', 'bur', 'kie', 'ruh', 'sil', 'tyr']
+  "mun": {
+    "army": ["ber", "boh", "bur", "kie", "ruh", "sil", "tyr"]
   },
-  naf: {
-    army: ['tun'],
-    fleet: ['mao', 'tun', 'wes']
+  "naf": {
+    "army": ["tun"],
+    "fleet": ["mao", "tun", "wes"]
   },
-  nao: {
-    fleet: ['cly', 'iri', 'lvp', 'mao', 'nwg']
+  "nao": {
+    "fleet": ["cly", "iri", "lvp", "mao", "nwg"]
   },
-  nap: {
-    army: ['apu', 'rom'],
-    fleet: ['apu', 'ion', 'rom', 'tys']
+  "nap": {
+    "army": ["apu", "rom"],
+    "fleet": ["apu", "ion", "rom", "tys"]
   },
-  nth: {
-    fleet: ['bel', 'den', 'ech', 'edi', 'hel', 'hol', 'lon', 'nwg', 'nwy', 'ska', 'yor']
+  "nth": {
+    "fleet": ["bel", "den", "ech", "edi", "hel", "hol", "lon", "nwg", "nwy", "ska", "yor"]
   },
-  nwg: {
-    fleet: ['bar', 'cly', 'edi', 'nao', 'nth', 'nwy']
+  "nwg": {
+    "fleet": ["bar", "cly", "edi", "nao", "nth", "nwy"]
   },
-  nwy: {
-    army: ['fin', 'stp', 'swe'],
-    fleet: ['bar', 'nth', 'nwg', 'ska', ['stp', 'n'], 'swe']
+  "nwy": {
+    "army": ["fin", "stp", "swe"],
+    "fleet": ["bar", "nth", "nwg", "ska", ["stp", "n"], "swe"]
   },
-  par: {
-    army: ['bre', 'bur', 'gas', 'pic']
+  "par": {
+    "army": ["bre", "bur", "gas", "pic"]
   },
-  pic: {
-    army: ['bel', 'bre', 'bur', 'par'],
-    fleet: ['bel', 'bre', 'ech']
+  "pic": {
+    "army": ["bel", "bre", "bur", "par"],
+    "fleet": ["bel", "bre", "ech"]
   },
-  pie: {
-    army: ['mar', 'tus', 'tyr', 'ven'],
-    fleet: ['gol', 'mar', 'tus']
+  "pie": {
+    "army": ["mar", "tus", "tyr", "ven"],
+    "fleet": ["gol", "mar", "tus"]
   },
-  por: {
-    army: ['spa'],
-    fleet: ['mao', ['spa', 'n'], ['spa', 's']]
+  "por": {
+    "army": ["spa"],
+    "fleet": ["mao", ["spa", "n"], ["spa", "s"]]
   },
-  pru: {
-    army: ['ber', 'lvn', 'sil', 'war'],
-    fleet: ['bal', 'ber', 'lvn']
+  "pru": {
+    "army": ["ber", "lvn", "sil", "war"],
+    "fleet": ["bal", "ber", "lvn"]
   },
-  rom: {
-    army: ['apu', 'nap', 'tus', 'ven'],
-    fleet: ['nap', 'tus', 'tys']
+  "rom": {
+    "army": ["apu", "nap", "tus", "ven"],
+    "fleet": ["nap", "tus", "tys"]
   },
-  ruh: {
-    army: ['bel', 'bur', 'hol', 'kie', 'mun']
+  "ruh": {
+    "army": ["bel", "bur", "hol", "kie", "mun"]
   },
-  rum: {
-    army: ['bud', 'bul', 'gal', 'ser', 'sev', 'ukr'],
-    fleet: ['bla', ['bul', 'e'], 'sev']
+  "rum": {
+    "army": ["bud", "bul", "gal", "ser", "sev", "ukr"],
+    "fleet": ["bla", ["bul", "e"], "sev"]
   },
-  ser: {
-    army: ['alb', 'bud', 'bul', 'gre', 'rum', 'tri']
+  "ser": {
+    "army": ["alb", "bud", "bul", "gre", "rum", "tri"]
   },
-  sev: {
-    army: ['arm', 'mos', 'rum', 'ukr'],
-    fleet: ['arm', 'bla', 'rum']
+  "sev": {
+    "army": ["arm", "mos", "rum", "ukr"],
+    "fleet": ["arm", "bla", "rum"]
   },
-  sil: {
-    army: ['ber', 'boh', 'gal', 'mun', 'pru', 'war']
+  "sil": {
+    "army": ["ber", "boh", "gal", "mun", "pru", "war"]
   },
-  ska: {
-    fleet: ['den', 'nth', 'nwy', 'swe']
+  "ska": {
+    "fleet": ["den", "nth", "nwy", "swe"]
   },
-  smy: {
-    army: ['ank', 'arm', 'con', 'syr'],
-    fleet: ['aeg', 'con', 'eas', 'syr']
+  "smy": {
+    "army": ["ank", "arm", "con", "syr"],
+    "fleet": ["aeg", "con", "eas", "syr"]
   },
-  spa: {
-    army: ['gas', 'mar', 'por'],
-    fleet: {
-      n: ['gas', 'mao', 'por'],
-      s: ['gol', 'mao', 'mar', 'por', 'wes']
+  "spa": {
+    "army": ["gas", "mar", "por"],
+    "fleet": {
+      "n": ["gas", "mao", "por"],
+      "s": ["gol", "mao", "mar", "por", "wes"]
     }
   },
-  stp: {
-    army: ['fin', 'lvn', 'mos', 'nwy'],
-    fleet: {
-      n: ['bar', 'nwy'],
-      s: ['fin', 'gob', 'lvn']
+  "stp": {
+    "army": ["fin", "lvn", "mos", "nwy"],
+    "fleet": {
+      "n": ["bar", "nwy"],
+      "s": ["fin", "gob", "lvn"]
     }
   },
-  swe: {
-    army: ['den', 'fin', 'nwy'],
-    fleet: ['bal', 'den', 'fin', 'gob', 'nwy', 'ska']
+  "swe": {
+    "army": ["den", "fin", "nwy"],
+    "fleet": ["bal", "den", "fin", "gob", "nwy", "ska"]
   },
-  syr: {
-    army: ['arm', 'smy'],
-    fleet: ['eas', 'smy']
+  "syr": {
+    "army": ["arm", "smy"],
+    "fleet": ["eas", "smy"]
   },
-  tri: {
-    army: ['alb', 'bud', 'ser', 'tyr', 'ven', 'vie'],
-    fleet: ['adr', 'alb', 'ven']
+  "tri": {
+    "army": ["alb", "bud", "ser", "tyr", "ven", "vie"],
+    "fleet": ["adr", "alb", "ven"]
   },
-  tun: {
-    army: ['naf'],
-    fleet: ['ion', 'naf', 'tys', 'wes']
+  "tun": {
+    "army": ["naf"],
+    "fleet": ["ion", "naf", "tys", "wes"]
   },
-  tus: {
-    army: ['rom', 'pie', 'ven'],
-    fleet: ['gol', 'pie', 'rom', 'tys']
+  "tus": {
+    "army": ["rom", "pie", "ven"],
+    "fleet": ["gol", "pie", "rom", "tys"]
   },
-  tyr: {
-    army: ['boh', 'mun', 'pie', 'tri', 'ven', 'vie']
+  "tyr": {
+    "army": ["boh", "mun", "pie", "tri", "ven", "vie"]
   },
-  tys: {
-    fleet: ['gol', 'ion', 'nap', 'rom', 'tun', 'tus', 'wes']
+  "tys": {
+    "fleet": ["gol", "ion", "nap", "rom", "tun", "tus", "wes"]
   },
-  ukr: {
-    army: ['gal', 'mos', 'rum', 'sev', 'war']
+  "ukr": {
+    "army": ["gal", "mos", "rum", "sev", "war"]
   },
-  ven: {
-    army: ['apu', 'pie', 'rom', 'tri', 'tus', 'tyr'],
-    fleet: ['adr', 'apu', 'tri']
+  "ven": {
+    "army": ["apu", "pie", "rom", "tri", "tus", "tyr"],
+    "fleet": ["adr", "apu", "tri"]
   },
-  vie: {
-    army: ['boh', 'bud', 'gal', 'tri', 'tyr']
+  "vie": {
+    "army": ["boh", "bud", "gal", "tri", "tyr"]
   },
-  wal: {
-    army: ['lon', 'lvp', 'yor'],
-    fleet: ['ech', 'iri', 'lon', 'lvp']
+  "wal": {
+    "army": ["lon", "lvp", "yor"],
+    "fleet": ["ech", "iri", "lon", "lvp"]
   },
-  war: {
-    army: ['gal', 'lvn', 'mos', 'pru', 'sil', 'ukr']
+  "war": {
+    "army": ["gal", "lvn", "mos", "pru", "sil", "ukr"]
   },
-  wes: {
-    fleet: ['gol', 'mao', 'naf', ['spa', 's'], 'tun', 'tys']
+  "wes": {
+    "fleet": ["gol", "mao", "naf", ["spa", "s"], "tun", "tys"]
   },
-  yor: {
-    army: ['edi', 'lon', 'lvp', 'wal'],
-    fleet: ['edi', 'lon', 'nth']
+  "yor": {
+    "army": ["edi", "lon", "lvp", "wal"],
+    "fleet": ["edi", "lon", "nth"]
   }
 }
 }
