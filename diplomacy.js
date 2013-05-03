@@ -10,6 +10,17 @@ $(function(){
       var svg = $(data).find('svg');
       svg.appendTo($('#map'));
       var pathSelector = 'path.land:not(.unplayable),path.water:not(.unplayable)';
+      json.powers.forEach(function(val, idx, powers) {
+        val.start.forEach(function(val, idx, start) {
+          if (val.province instanceof Array) {
+            // fleet on a coast
+            $('#' + val.province[0] + ' .coast[data-coast="' + val.province[1] + '"] .unit:not(.dislodged)')[0].setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#Fleet');
+          } else {
+            // unit on a space
+            $('#' + val.province + '>.unit:not(.dislodged)')[0].setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', val.type === 'F' ? '#Fleet' : '#Army');
+          }
+        });
+      });
       svg.find('.province').click(function(e) {
         var prov = $(this);
         var p = json.graph[prov.attr('id')];
