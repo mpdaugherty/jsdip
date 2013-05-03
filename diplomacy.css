@@ -1,16 +1,9 @@
 .long-name {
   display: none;
 }
-.highlighted {
+#MapLayer>g:hover>path {
   fill: red;
 }
-.selected {
-  fill: blue;
-}
-.highlighted.selected {
-  fill: purple;
-}
-
 svg {
   cursor: default;
   -moz-user-select: none;
